@@ -156,9 +156,9 @@ class HomeScreen extends StatelessWidget {
                                                 todoController.savetodo.any(
                                                         (item) =>
                                                             item.id == todo.id)
-                                                    ? Icons.bookmark
+                                                    ? Icons.favorite
                                                     : Icons
-                                                        .bookmark_outline_outlined,
+                                                        .favorite_border_rounded,
                                                 color: isDarkTheme
                                                     ? Colors.white
                                                     : Color(0xff1E3E62),
@@ -227,8 +227,8 @@ class HomeScreen extends StatelessWidget {
                                         icon: Icon(
                                           todoController.savetodo.any(
                                                   (item) => item.id == todo.id)
-                                              ? Icons.bookmark
-                                              : Icons.bookmark_outline_outlined,
+                                              ? Icons.favorite
+                                              : Icons.favorite_border,
                                           color: isDarkTheme
                                               ? Colors.white
                                               : Color(0xff1E3E62),
